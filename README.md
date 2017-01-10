@@ -23,9 +23,9 @@ Descritivo do teste
 ----------
 
 
->**Opcional:**
+>**Opcionais:**
 > - Criar migrations para gerar a estrutura de tabelas.
->  - Utilizar seeders para popular as tabelas com uma primeira carga de dados. 
+> - Utilizar seeders para popular as tabelas com uma primeira carga de dados. 
 
 <i class="icon-folder-open"></i>Deploy
 -------------
