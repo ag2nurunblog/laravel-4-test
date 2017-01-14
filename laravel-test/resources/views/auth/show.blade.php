@@ -51,8 +51,7 @@
                     </h5>
                     <h5>
                         <span class="glyphicon glyphicon-flag"></span>  Group(s):
-                        <?php $groupHandle = App\Group::all();?>
-                        @foreach($groupHandle as $group)
+                        @foreach($user->groups as $group)
                                 {{ $group->name }}
                         @endforeach
                     </h5>
