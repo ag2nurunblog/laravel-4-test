@@ -1,0 +1,24 @@
+{
+  "name": "admin-base",
+  "authors": [
+    "Rafael Silveira <rsilveiracc@gmail.com>"
+  ],
+  "description": "Admin",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "admin-lte#^2.3.8",
+    "components-font-awesome": "^4.6.3",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.43",
+    "datatables.net": "^1.10.12",
+    "datatables.net-bs": "^1.10.12"
+  }
+}
