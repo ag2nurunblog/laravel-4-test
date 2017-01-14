@@ -18,9 +18,11 @@ class UserGroupsController extends Controller
       if(Request::wantsJson()){
         return $usersGroup;
       }else{
+        // Retorna a view users-group.index com as informações dos Users Groups
         return view('users-group.index', compact('usersGroup'));
       }
     }else{
+      // Se o usuário não estiver logado redireciona para a rota de login
       return redirect('login');
     }
   }
@@ -31,8 +33,10 @@ class UserGroupsController extends Controller
       $userGroup = new UserGroup;
       $users = User::pluck('name','id')->all();
       $groups = Group::pluck('name','id')->all();
+      // Retorna a view users-group.create com as informações de usuários e grupos
       return view("users-group.create",compact('userGroup', 'users','groups'));
     }else{
+      // Se o usuário não estiver logado redireciona para a rota de login
       return redirect('login');
     }
   }
@@ -46,9 +50,11 @@ class UserGroupsController extends Controller
         return $usersGroup;
       }else{
         $usersGroup = UserGroup::all();
+        // Retorna a view users-group.index com todos os Users Groups
         return view('users-group.index', compact('usersGroup'));
       }
     }else{
+      // Se o usuário não estiver logado redireciona para a rota de login
       return redirect('login');
     }
   }
@@ -59,9 +65,11 @@ class UserGroupsController extends Controller
       if(Request::wantsJson()){
         return $userGroup;
       }else{
+        // Retorna a view users-group.show com informação do User Group
         return view('users-group.show', compact('userGroup'));
       }
     }else{
+      // Se o usuário não estiver logado redireciona para a rota de login
       return redirect('login');
     }
   }
@@ -73,8 +81,10 @@ class UserGroupsController extends Controller
       $userGroup = UserGroup::findOrFail($id);
       $users = User::pluck('name','id')->all();
       $groups = Group::pluck('name','id')->all();
+      // Retorna a view users-group.edit com as informaçõe dos Users e Groups
       return view('users-group.edit', compact('userGroup','users','groups'));
     }else{
+      // Se o usuário não estiver logado redireciona para a rota de login
       return redirect('login');
     }
 
@@ -89,13 +99,16 @@ class UserGroupsController extends Controller
       if(Request::wantsJson()){
         return $userGroup;
       }else{
+        // Retorna a view users-group.index
         return redirect('users-group');
       }
     }else{
+      // Se o usuário não estiver logado redireciona para a rota de login
       return redirect('login');
     }
 
   }
+  /** Rota destroy do Controller UserGroups **/
   public function destroy($id)
   {
     if (Auth::check())
@@ -106,9 +119,11 @@ class UserGroupsController extends Controller
       if(Request::wantsJson()){
         return (string) $userGroup;
       }else{
+        // Retorna a view users-group.index
         return redirect('users-group');
       }
     }else{
+      // Se o usuário não estiver logado redireciona para a rota de login
       return redirect('login');
     }
   }
