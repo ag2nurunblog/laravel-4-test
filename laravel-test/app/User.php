@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: rsilveira
+ * Date: 14/01/17
+ * Time: 17:36
+ */
 
 namespace App;
 
@@ -15,7 +21,13 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name',
+        'email',
+        'password',
+        'group_id',
+        'created_at',
+        'updated_at',
+        'company_id'
     ];
 
     /**
@@ -26,4 +38,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function groups()
+    {
+        return $this->belongsToMany('App\Group', 'user_group', 'user_id', 'group_id');
+    }
+
+    public function companies()
+    {
+        return $this->belongsTo('App\Company', 'company_id');
+    }
 }

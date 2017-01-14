@@ -3,7 +3,7 @@
         <div class="user-panel" style="bottom: 30px;">
             <img style="display: block;
     margin-left: auto;
-    margin-right: auto;" src="{{ asset('template/imgs/logo.jpg') }}">
+    margin-right: auto;" src="#">
         </div>
         <ul class="sidebar-menu">
             @include('layouts.menu')

@@ -12,20 +12,16 @@
     <link rel="stylesheet" href="{{ asset('bower_components/AdminLTE/plugins/datepicker/datepicker3.css') }}">
     <link rel="stylesheet" href="{{ asset('bower_components/AdminLTE/plugins/timepicker/bootstrap-timepicker.min.css') }}">
     <link rel="stylesheet" href="{{ asset('bower_components/AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('bower_components/AdminLTE/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.css') }}">
     <link rel="stylesheet" href="{{ asset('bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css') }}">
     <link rel="stylesheet" href="{{ asset('bower_components/fastselect/dist/fastselect.min.css') }}">
     <link rel="stylesheet" href="{{ asset('bower_components/bootstrap-formhelpers/dist/css/bootstrap-formhelpers.min.css') }}">
     <link rel="stylesheet" href="{{ asset('bower_components/bootstrap-select/dist/css/bootstrap-select.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('bower_components/flag-icon-css/css/flag-icon.min.css') }}">
     <link rel="stylesheet" href="{{ asset('bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('bower_components/AdminLTE/plugins/select2/select2.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
     <style>
-        .pointer {
-            cursor: pointer;
-        }
+
         .bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
             background-color: #367fa9 !important;
         }
@@ -141,7 +137,7 @@
 
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2017 <a href="#">Laravel Tesst</a>.</strong>
+            <strong>Copyright © 2017 <a href="#">Laravel Test</a>.</strong>
         </footer>
     </div>
 @else
@@ -197,7 +193,6 @@
     <script src="{{ asset('bower_components/AdminLTE/plugins/iCheck/icheck.min.js') }}"></script>
     <script src="{{asset('bower_components/AdminLTE/plugins/timepicker/bootstrap-timepicker.min.js')}}"></script>
     <script src="{{asset('bower_components/AdminLTE/plugins/datepicker/bootstrap-datepicker.js')}}"></script>
-    <script src="{{asset('bower_components/AdminLTE/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.js')}}"></script>
     <script src="{{asset('bower_components/bootstrap-formhelpers/dist/js/bootstrap-formhelpers.js')}}"></script>
     <script src="{{asset('bower_components/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
     <script src="{{ asset('bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
@@ -208,39 +203,12 @@
     <script src="{{ asset('bower_components/fastsearch/dist/fastsearch.js') }}"></script>
     <script src="{{ asset('bower_components/fastselect/dist/fastselect.js') }}"></script>
     <script src="{{ asset('bower_components/moment/min/moment.min.js') }}"></script>
-    <script src="{{ asset('bower_components/AdminLTE/dist/js/customTables.js')}}"></script>
-    <script src="{{ asset('bower_components/AdminLTE/dist/js/menuNavigation.js')}}"></script>
+    <script src="{{ asset('js/customTables.js')}}"></script>
+    <script src="{{ asset('js/menuNavigation.js')}}"></script>
 
     <script>
-        $('.singleInputDynamic').fastselect();
         $('.singleSelectGrouped').fastselect();
-        $('.singleSelectGroupedCategory').fastselect();
-        $('.singleSelect').fastselect({
-            minimumResultsForSearch: 0
-        });
-        $('.tagsInput').fastselect();
-        $('.select').fastselect({
-            minimumResultsForSearch: -1
-        });
-
-        function readURL(input) {
-
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    $('#holder').attr('src', e.target.result);
-                }
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-
-        $("#attachment").change(function(){
-            readURL(this);
-        });
     </script>
-
 
     @yield('scripts')
 </body>
