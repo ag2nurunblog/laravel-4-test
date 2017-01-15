@@ -23,13 +23,6 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     /**
-     * Where to redirect users after login / registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
-
-    /**
      * Create a new controller instance.
      *
      * @return void
@@ -66,6 +59,12 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'created_at' => date('Y-m-d'),
+            'update_at' => date('Y-m-d'),
+            'active' => 1,
+            'remember_token' => str_random(10),
+            'group' => $data['group'],
+            'company_id' => $data['company']
         ]);
     }
 }
