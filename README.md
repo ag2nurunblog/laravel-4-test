@@ -1,6 +1,13 @@
 Teste Laravel
 ===================
+## Heroku :
 
+[http://cryptic-wildwood-18895.herokuapp.com](http://cryptic-wildwood-18895.herokuapp.com)
+
+User: admin@ag2nurun.com.br
+Password: 1^C%tsDbfGqftNTC
+
+Para gerar o banco de dados, foi criado Migrations como pode ser visto na pasta database/migrations. E para popular foi criado Seeders como pode ser visto na pasta database/seeds
 
 Este teste tem por objetivo avaliar seus conhecimentos no framework Laravel 5.3
 
