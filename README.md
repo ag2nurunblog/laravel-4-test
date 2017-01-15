@@ -1,3 +1,16 @@
+# AG2 NURUN - TESTE BACK-END
+===================
+
+## Instalação para Desenvolvimento
+```sh
+$ composer install
+$ cp .env.example .env
+$ php artisan key:generate
+$ php artisan migrate #antes de rodar este comando verifique sua configuracao com banco em .env
+$ php artisan db:seed #nao obrigatorio, serve para gerar os seeders criados (dados de teste)
+$ php artisan serve
+```
+
 Teste Laravel
 ===================
 
