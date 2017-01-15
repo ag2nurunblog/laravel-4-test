@@ -1,4 +1,46 @@
-Teste Laravel
+[Readme structure by: @rsilveira65](https://github.com/rsilveira65)
+
+# Laravel Test
+
+## Usage
+
+### Run the project with build in laravel server (http://localhost:8000)
+
+#### Set all database info in .env file
+
+#### Run the following command
+
+``` bash
+$ composer install
+$ php artisan serve
+```
+
+### Run the project with Docker (Make sure that you have Docker installed)
+
+#### Create the Docker containers
+
+``` bash
+$ composer install
+$ docker-compose -f docker-compose-dev.yml up -d
+```
+
+### Migrations
+
+#### Run the following command
+
+``` bash
+$ php artisan migrate
+```
+
+### Seed (Creates 50 companies, 50 users groups and 50 users)
+
+#### Run the following command
+
+``` bash
+$ php artisan db:seed
+```
+
+Laravel Test
 ===================
 
 
