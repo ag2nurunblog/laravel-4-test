@@ -42,7 +42,7 @@
                             @endif
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label>Group(s)*</label>
                             <?php $groupHandle = App\Group::all();?>
@@ -51,6 +51,17 @@
                                     <option value="{{ $group->id }}" @foreach($user->groups as $item)@if($item->id == $group->id) selected @endif @endforeach>
                                         {{ $group->name }}
                                     </option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Company*</label>
+                            <?php $companyHandle = App\Company::all();?>
+                            <select class="form-control singleSelectGrouped" name="company_id" required>
+                                @foreach($companyHandle as $company)
+                                    <option value="{{ $company->id }}" @if($company->id == $user->company_id) selected @endif>{{ $company->name }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -101,7 +112,7 @@
 
                 <div class="box-footer">
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="submit" class="btn btn-default">Update</button>
                     </div>
                 </div>
             </form>
