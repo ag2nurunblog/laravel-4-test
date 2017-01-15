@@ -21,7 +21,6 @@ class CreateUserTable extends Migration
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
             $table->boolean('active');
-            $table->rememberToken();
             $table->integer('company_id')->unsigned()->nullable();
             $table->foreign('company_id')->references('id')->on('company')->onDelete('SET NULL');
         });
