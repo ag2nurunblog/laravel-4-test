@@ -17,7 +17,6 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th>#</th>
               <th>Groups</th>
               <th>Users</th>
               <th>Actions</th>
@@ -25,7 +24,6 @@
           </thead>
           <tbody>
             <tr v-for="(item, index) in items">
-              <td>{{ item.id }}</td>
               <td>{{ item.name }}</td>
               <td>{{ item.users.length }}</td>
               <td>

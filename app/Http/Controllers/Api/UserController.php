@@ -134,13 +134,9 @@ class UserController extends Controller
                 'company_id' => null
             ])->save();
         }
-        if (count($groups)) {
-            $user->groups = $user->groups->each(function($e) use($user) {
-                $user->groups()->detach($e->id);
-            });
-            foreach ($groups as $group) {
-                $user->groups()->attach($group);
-            }
+        $user->groups()->detach();
+        foreach ($groups as $group) {
+            $user->groups()->attach($group);
         }
         return response()->json($user);
     }
