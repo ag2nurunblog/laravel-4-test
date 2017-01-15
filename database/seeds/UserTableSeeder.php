@@ -15,8 +15,7 @@ class UserTableSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@ag2nurun.com.br',
             'password' => 'ag2nurun',
-            'active' => 1,
-            'company_id' => 1
+            'active' => 1
         ]);
         if (App::isLocal()) {
             factory(App\User::class, 99)->create();
