@@ -18,7 +18,8 @@ class UserTableSeeder extends Seeder
             'active' => 1,
             'company_id' => 1
         ]);
-
-        factory(App\User::class, 99)->create();
+        if (App::isLocal()) {
+            factory(App\User::class, 99)->create();
+        }
     }
 }

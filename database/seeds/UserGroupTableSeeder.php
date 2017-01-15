@@ -11,6 +11,8 @@ class UserGroupTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\UserGroup::class, 50)->create();
+        if (App::isLocal()) {
+            factory(App\UserGroup::class, 50)->create();
+        }
     }
 }

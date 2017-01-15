@@ -11,6 +11,8 @@ class GroupTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Group::class, 20)->create();
+        if (App::isLocal()) {
+            factory(App\Group::class, 20)->create();
+        }
     }
 }
