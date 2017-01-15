@@ -28,6 +28,6 @@ class CompanyTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('group');
+        Schema::dropIfExists('company');
     }
 }
