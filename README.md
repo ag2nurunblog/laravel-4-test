@@ -39,7 +39,7 @@ $ docker-compose up -d
 $ php artisan migrate
 ```
 
-### Seed (Creates 50 companies, 50 users groups and 50 users)
+### Seed (Will create 50 companies, 50 users groups and 50 users)
 
 #### Run the following command
 
