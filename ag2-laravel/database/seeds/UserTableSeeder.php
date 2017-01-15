@@ -20,9 +20,9 @@ class UserTableSeeder extends Seeder
 
         // Presidência
     	User::create([
-		    'name' => 'Rodrigo Silveira',
-		    'email' => 'rodrigosilveira@gmail.com',
-		   	'password' => Hash::make('rodrigo'),
+		    'name' => 'Admin AG2',
+		    'email' => 'adminag2@gmail.com',
+		   	'password' => Hash::make('admin'),
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s'),
         'active' => 1,
@@ -40,8 +40,8 @@ class UserTableSeeder extends Seeder
   		]);
   		// Produção
     	User::create([
-		    'name' => 'João Silva',
-		    'email' => 'joaosilva@gmail.com',
+		    'name' => 'Rodrigo Silveira',
+		    'email' => 'rodrigosilveira@gmail.com',
 		   	'password' => Hash::make('joao'),
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s'),

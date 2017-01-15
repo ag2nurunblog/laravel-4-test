@@ -17,7 +17,7 @@ class UserGroupTableSeeder extends Seeder
     	$administrativo = 2;
     	$producao = 3;
 
-        UserGroup::truncate();
+      UserGroup::truncate();
 
         //Rodrigo Silveira
     	UserGroup::create([
