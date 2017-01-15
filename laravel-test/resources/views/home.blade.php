@@ -97,7 +97,7 @@
                                             <span class="time"><i class="fa fa-clock-o"></i> {{ Carbon\Carbon::parse($item['updated_at'])->format('H:i:s') }}</span>
 
                                             <h3 class="timeline-header">
-                                                <a href="{{ url('admin/category/' . $item['id'] . '/edit') }}">
+                                                <a href="{{ url('admin/company/' . $item['id'] . '/edit') }}">
                                                     {{ $item['name'] }}
                                                 </a>
                                             </h3>

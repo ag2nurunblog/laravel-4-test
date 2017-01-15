@@ -13,11 +13,11 @@ class CompanyTable extends Migration
      */
     public function up()
     {
-        Schema::table('company', function (Blueprint $table) {
+        Schema::create('company', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamp('created_at')->nullable();
-            $table->timestamp('updated')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 

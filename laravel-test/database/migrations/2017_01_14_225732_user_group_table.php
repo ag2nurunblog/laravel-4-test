@@ -13,13 +13,12 @@ class UserGroupTable extends Migration
      */
     public function up()
     {
-        Schema::table('user_group', function (Blueprint $table) {
+        Schema::create('user_group', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('group_id');
             $table->integer('user_id');
-            $table->string('name');
             $table->timestamp('created_at')->nullable();
-            $table->timestamp('updated')->nullable();
+            $table->timestamp('updated_at')->nullable();
 
         });
     }

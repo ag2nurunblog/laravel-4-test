@@ -13,11 +13,11 @@ class GroupTable extends Migration
      */
     public function up()
     {
-        Schema::table('group', function (Blueprint $table) {
+        Schema::create('group', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamp('created_at')->nullable();
-            $table->timestamp('updated')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 

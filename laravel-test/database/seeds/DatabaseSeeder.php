@@ -33,9 +33,9 @@ class DatabaseSeeder extends Seeder
         foreach(range(1, 50) as $index)
         {
             $user = new User();
-            $user->name       = $faker->word . $index;
-            $user->email      = $faker->email;
-            $user->password   = bcrypt($faker->password);
+            $user->name       = $index == 1 ? 'admin' : $faker->word . $index;
+            $user->email      = $index == 1 ? 'admin@admin.com' : $faker->email;
+            $user->password   = $index == 1 ? bcrypt('adminadmin') : bcrypt($faker->password);
             $user->company_id = rand(1,50);
 
             $user->save();
