@@ -1,5 +1,4 @@
 # AG2 NURUN - TESTE BACK-END
-===================
 
 ## Instalação para Desenvolvimento
 ```sh
