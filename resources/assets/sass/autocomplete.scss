@@ -1,0 +1,24 @@
+.autocomplete-suggestions {
+  margin-top: 3px;
+  background: #fff;
+  overflow: auto;
+  strong {
+    font-weight: bold;
+    color: #000;
+  }
+}
+
+.autocomplete-suggestion {
+  font-family: inherit;
+  color: #333;
+  font-size: 9pt;
+  text-transform: uppercase;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.autocomplete-selected {
+  background: #f0f0f0;
+  cursor: pointer;
+}
