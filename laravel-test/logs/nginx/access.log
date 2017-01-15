@@ -1,0 +1,7 @@
+172.21.0.1 - - [15/Jan/2017:11:43:32 +0000] "GET / HTTP/1.1" 404 193 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"
+172.21.0.1 - - [15/Jan/2017:11:43:34 +0000] "GET / HTTP/1.1" 404 193 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"
+172.21.0.1 - - [15/Jan/2017:11:46:02 +0000] "GET / HTTP/1.1" 404 193 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"
+172.21.0.1 - - [15/Jan/2017:11:47:38 +0000] "GET / HTTP/1.1" 302 364 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"
+172.21.0.1 - - [15/Jan/2017:11:47:40 +0000] "GET /admin HTTP/1.1" 302 364 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"
+172.21.0.1 - - [15/Jan/2017:11:47:42 +0000] "GET /login HTTP/1.1" 200 1220 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"
+172.21.0.1 - - [15/Jan/2017:11:50:23 +0000] "POST /login HTTP/1.1" 500 50136 "http://localhost:8080/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"

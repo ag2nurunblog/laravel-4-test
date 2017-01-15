@@ -1,4 +1,53 @@
-Teste Laravel
+[Readme structure by: @rsilveira65](https://github.com/rsilveira65)
+
+# Laravel Test
+
+## Heroku Deploy:
+
+[http://laravel-rsilveira.herokuapp.com/](http://laravel-rsilveira.herokuapp.com/)
+
+User: admin@admin.com
+Pass: adminadmin
+
+## Usage
+
+### Run the project with build in laravel server (http://localhost:8000)
+
+#### Set all database info in .env file
+
+#### Run the following commands
+
+``` bash
+$ composer install
+$ php artisan serve
+```
+
+### Run the project with Docker (Make sure that you have Docker installed) (http://localhost:8080)
+
+#### Create the Docker containers
+
+``` bash
+$ composer install
+$ docker-compose up -d
+```
+
+### Migrations
+
+#### Run the following command
+
+``` bash
+$ php artisan migrate
+```
+
+### Seed (Will create 50 companies, 50 users groups and 50 users)
+
+#### Run the following command
+
+``` bash
+$ php artisan db:seed
+```
+
+Laravel Test
 ===================
 
 
